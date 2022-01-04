@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true, // @ts-check
+    "target": "ES5", // tsc 명령어로 파일을 변환할 때 변환하는 언어 버전
+    "outDir": "./built",
+    "moduleResolution": "Node",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "noImplicitAny": true
+  },
+  "include": ["./src/**/*"] // src 폴더 내 모든 대상을 컴파일 하겠다.
+}

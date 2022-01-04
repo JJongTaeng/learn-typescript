@@ -20,8 +20,8 @@ var add = function(a: number) {
 var sum = function(a: number, b: number) {
   // ...
 }
-// sum = add; // X
-// add = sum; // O
+sum = add; // not error
+add = sum; // error
 
 // // 유니온 타입
 // var c: Developer | Person;
