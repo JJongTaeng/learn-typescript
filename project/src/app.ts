@@ -1,3 +1,9 @@
+// 라이브러리 로딩
+import axios from 'axios';
+import { Chart } from 'chart.js';
+
+// 변수, 함수 임포트
+
 // utils
 function $(selector: string) {
   return document.querySelector(selector);
@@ -22,7 +28,7 @@ function createSpinnerElement(id: string) {
   wrapperDiv.setAttribute('id', id);
   wrapperDiv.setAttribute(
     'class',
-    'spinner-wrapper flex justify-center align-center',
+    'spinner-wrapper flex justify-center align-center'
   );
   const spinnerDiv = document.createElement('div');
   spinnerDiv.setAttribute('class', 'ripple-spinner');
